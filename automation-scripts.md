@@ -38,3 +38,17 @@ public class Main {
         }
     }
 }
+
+---
+
+## 📑 QA Test Scenarios & Methodology
+To verify the logic above, I applied **Equivalence Partitioning** and **Boundary Value Analysis (BVA)**. This ensures that the application handles transitions between different age categories correctly.
+
+| Test Case | Input (Age) | Expected Output | Testing Technique |
+| :--- | :--- | :--- | :--- |
+| **TC-01** | 18 | You will receive a Student (School) Card | Boundary Value (Upper) |
+| **TC-02** | 19 | You will receive a University Student Card | Boundary Value (Lower) |
+| **TC-03** | 25 | You will receive a Standard/Business Card | Positive Testing |
+| **TC-04** | 5 | Age not eligible for card issuance | Negative Testing |
+
+---
