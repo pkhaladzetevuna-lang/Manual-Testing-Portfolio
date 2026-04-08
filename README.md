@@ -35,3 +35,21 @@ This checklist covers the password recovery functionality.
 | :--- | :--- | :--- | :--- |
 | 1 | Submit valid registered email | Recovery email is sent to the user | High |
 | 2 | Submit invalid/wrong email format | Error message: "Please enter a valid email" | Medium |
+
+
+---
+
+### 📋 4. OTP (One-Time Password) Verification Checklist
+This checklist focuses on the security and functionality of verification codes.
+
+| Step | Requirement / Test Case | Expected Result | Priority |
+| :--- | :--- | :--- | :--- |
+| 1 | Enter valid OTP | User is verified and proceeds to next step | High |
+| 2 | Enter invalid/wrong OTP | Error message: "Invalid code" | High |
+| 3 | Enter expired OTP | Error message: "Code has expired" | High |
+| 4 | Re-use already used OTP | Error message: "Code already used" | High |
+| 5 | Resend OTP multiple times | System should limit frequency (Throttling) | Medium |
+| 6 | Copy/Paste OTP with spaces | System should trim spaces and accept the code | Low |
+| 7 | Multi-device OTP entry | Same OTP should work only on the device it was requested | Medium |
+| 8 | Enter OTP with No Internet | Error message: "Check your internet connection" | High |
+| 9 | Rapid "Resend" clicks | Button should be disabled for 60 seconds | Medium |
