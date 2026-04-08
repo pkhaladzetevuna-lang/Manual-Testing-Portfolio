@@ -6,94 +6,86 @@
     <title>Teona Pkhaladze | QA Engineer</title>
     <style>
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: #f8fafc; /* ძალიან ღია, სუფთა ნაცრისფერი */
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
             color: #1e293b;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             display: flex;
-            max-width: 1050px;
+            max-width: 1100px;
             width: 90%;
             justify-content: space-between;
             align-items: center;
+            gap: 40px;
         }
-        .left-content {
-            flex: 1.2;
-            padding-right: 60px;
-        }
-        .right-content {
-            flex: 0.8;
-        }
+        .left-content { flex: 1.2; }
+        .right-content { flex: 0.8; }
+        
         .label {
-            color: #7c3aed; /* ელეგანტური იასამნისფერი */
+            color: #7c3aed;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-size: 0.85rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         h1 {
-            font-size: 3.8rem;
+            font-size: 4rem;
             margin: 0;
             color: #0f172a;
             line-height: 1;
-            font-weight: 800;
         }
-        h1 span {
-            color: #7c3aed;
-        }
+        h1 span { color: #7c3aed; }
         p {
-            font-size: 1.15rem;
-            line-height: 1.7;
+            font-size: 1.1rem;
+            line-height: 1.6;
             color: #475569;
-            margin-top: 25px;
+            margin-top: 20px;
         }
-        .buttons {
-            margin-top: 40px;
-        }
+        
+        .buttons { margin-top: 35px; display: flex; gap: 15px; align-items: center; }
         .btn {
             text-decoration: none;
-            padding: 14px 30px;
+            padding: 12px 25px;
             border-radius: 8px;
             font-weight: 600;
-            margin-right: 15px;
-            display: inline-block;
-            transition: all 0.2s ease;
+            transition: 0.3s;
         }
         .btn-cv { 
             background-color: #7c3aed; 
-            color: white;
-            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
-        }
-        .btn-cv:hover {
-            transform: translateY(-2px);
-            background-color: #6d28d9;
+            color: white; 
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
         }
         .btn-outline { 
-            border: 1px solid #e2e8f0;
-            color: #64748b;
+            border: 1px solid #e2e8f0; 
+            color: #64748b; 
             background: white;
         }
-        .btn-outline:hover {
-            border-color: #7c3aed;
-            color: #7c3aed;
-        }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
 
-        /* JSON Card - რბილი და თანამედროვე */
+        /* JSON Card - უფრო მკაფიო დიზაინით */
         .json-card {
             background-color: #ffffff;
-            color: #475569;
-            padding: 35px;
-            border-radius: 20px;
+            padding: 40px;
+            border-radius: 24px;
             font-family: 'Fira Code', monospace;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            font-size: 0.9rem;
-            border: 1px solid #f1f5f9;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        .json-card::before {
+            content: "status: active";
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 0.7rem;
+            color: #10b981;
+            text-transform: uppercase;
         }
         .key { color: #7c3aed; font-weight: bold; }
         .string { color: #0f172a; }
@@ -104,28 +96,31 @@
 
 <div class="container">
     <div class="left-content">
-        <div class="label">— Quality Assurance</div>
+        <div class="label">— Quality Assurance Engineer</div>
         <h1>Teona <br><span>Pkhaladze.</span></h1>
         <p>
             <b>Manual QA Tester</b> with a focus on precision and reliability. 
-            Currently contributing to software excellence at <b>Binary Forge</b>. 
-            Skilled in <b>API Testing</b> and <b>SQL</b>, with a growing focus on <b>Test Automation</b>.
+            Currently interning at <b>Binary Forge</b>, specializing in 
+            <b>API Testing</b> and <b>SQL</b>. Dedicated to ensuring bug-free 
+            user experiences while transitioning to <b>Test Automation</b>.
         </p>
         <div class="buttons">
             <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
             <a href="https://www.linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
+            <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-outline" target="_blank">GitHub</a>
         </div>
     </div>
 
     <div class="right-content">
         <div class="json-card">
             <span class="bracket">{</span><br>
-            &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"QA Manual Tester"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"internship"</span>: <span class="string">"Binary Forge"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"tools"</span>: <span class="bracket">[</span><br>
+            &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"Manual QA"</span>,<br>
+            &nbsp;&nbsp;<span class="key">"company"</span>: <span class="string">"Binary Forge"</span>,<br>
+            &nbsp;&nbsp;<span class="key">"stack"</span>: <span class="bracket">[</span><br>
             &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Postman"</span>, <span class="string">"SQL"</span>, <span class="string">"Jira"</span><br>
             &nbsp;&nbsp;<span class="bracket">]</span>,<br>
-            &nbsp;&nbsp;<span class="key">"mission"</span>: <span class="string">"Bug-free world"</span><br>
+            &nbsp;&nbsp;<span class="key">"focus"</span>: <span class="string">"Mobile & Web"</span>,<br>
+            &nbsp;&nbsp;<span class="key">"goal"</span>: <span class="string">"Automation"</span><br>
             <span class="bracket">}</span>
         </div>
     </div>
