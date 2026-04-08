@@ -4,7 +4,7 @@
 
 # 🚀 Welcome to My QA Portfolio
 
-Hi! I'm **Teona**, a QA Manual Testing student and intern. This repository showcases my skills in manual testing, API validation, SQL, and my transition into test automation.
+Hi! I'm **Teona**, a QA Manual Testing student and currently a QA Intern at **Binary Forge**. This repository showcases my professional growth, technical skills, and hands-on experience in ensuring software quality.
 
 ---
 
@@ -14,27 +14,33 @@ Hi! I'm **Teona**, a QA Manual Testing student and intern. This repository showc
 * [🐛 **Bug Reports Collection**](./bug-reports.md) — *Functional and UI/UX defect documentation.*
 * [📡 **API Testing (Postman)**](./api-testing.md) — *HTTP status validation and automated test scripts.*
 * [🗄️ **SQL Queries**](./sql-queries.md) — *Database integrity and data verification scripts.*
-* [🤖 **Automation Scripts**](./automation-scripts.md) — *Initial automation scripts using Java & Playwright.*
-* [📁 **QA Assets**](./assets.md) — *Test data, templates, and reusable artifacts.*
+* [🤖 **Automation Scripts**](./automation-scripts.md) — *Core automation logic using Java and UI testing examples.*
+* [📁 **QA Assets**](./assets.md) — *Templates, test data, and professional certifications.*
 
 ---
 
 ### 🛠 Tech Stack & Tools
 
-* **Testing:** Manual Testing, STLC, SDLC, Bug Reporting
+* **Testing:** Manual Testing, STLC, SDLC, Bug Reporting (Jira)
 * **API:** Postman, Swagger
 * **Databases:** SQL (PostgreSQL, MySQL)
-* **Automation:** Java, Playwright
-* **Project Management:** Jira, GitHub
-* **Platform:** Web, Mobile (iOS/Android)
+* **Automation:** Java (Conditional Logic), Playwright
+* **Project Management:** GitHub, Agile Methodology
+* **Platforms:** Web, Mobile (iOS/Android)
+
+---
+
+### 🌟 Featured: Automation & Logic
+In this portfolio, I emphasize the bridge between Manual and Automation testing. My scripts aren't just code; they are built on **Boundary Value Analysis (BVA)** and **Equivalence Partitioning** to ensure maximum test coverage.
+
+> "Quality is not an act, it is a habit."
 
 ---
 
 ### 💬 Connect with Me
-* **LinkedIn:** [Insert Your LinkedIn Link Here]
-* **Email:** [Your Email Address]
+* **LinkedIn:** [Insert Your LinkedIn Profile Link Here]
+* **Email:** [Your Professional Email Here]
 
----
 <p align="center">
-  <i>"Every bug found is a step closer to perfection."</i>
+  <i>Every bug found is a step closer to perfection.</i>
 </p>
