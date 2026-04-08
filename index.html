@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teona Pkhaladze | QA Engineer Portfolio</title>
+    <title>Teona Pkhaladze | QA Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
     <style>
         * { scroll-behavior: smooth; box-sizing: border-box; }
@@ -15,7 +15,7 @@
             line-height: 1.6;
         }
 
-        /* მენიუ (Navbar) */
+        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -40,17 +40,17 @@
         }
         nav ul li a:hover { color: #a855f7; }
 
-        /* სექციების საერთო სტილი */
         section {
             min-height: 100vh;
             padding: 100px 50px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
 
-        /* Home Section */
-        #home .container {
+        /* Hero Section */
+        .container {
             display: flex;
             max-width: 1100px;
             gap: 50px;
@@ -59,9 +59,9 @@
         .hero-text { flex: 1.2; }
         .hero-visual { flex: 0.8; }
 
-        h1 { font-size: 3.5rem; margin: 0; color: #ffffff; }
+        h1 { font-size: 3.2rem; margin: 0; color: #ffffff; }
         h1 span { color: #a855f7; }
-        .description { font-size: 1.2rem; color: #94a3b8; margin: 25px 0; }
+        .description { font-size: 1.1rem; color: #94a3b8; margin: 25px 0; }
 
         .buttons { display: flex; gap: 15px; }
         .btn {
@@ -70,6 +70,7 @@
             border-radius: 8px;
             font-weight: 600;
             transition: 0.3s;
+            font-size: 0.9rem;
         }
         .btn-cv { background: #a855f7; color: white; }
         .btn-outline { border: 1px solid #334155; color: #f1f5f9; }
@@ -78,7 +79,7 @@
         /* JSON Card */
         .json-card {
             background-color: #1e293b;
-            padding: 30px;
+            padding: 35px;
             border-radius: 20px;
             font-family: 'Fira Code', monospace;
             border: 1px solid #334155;
@@ -86,11 +87,13 @@
         }
         .key { color: #a855f7; }
         .string { color: #22d3ee; }
+        .bracket { color: #94a3b8; }
 
-        /* სხვა სექციები */
-        .section-title { font-size: 2.5rem; margin-bottom: 30px; text-align: center; width: 100%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%; max-width: 1100px; }
-        .card { background: #1e293b; padding: 30px; border-radius: 15px; border: 1px solid #334155; }
+        /* Generic Section Styles */
+        .section-title { font-size: 2.5rem; margin-bottom: 20px; color: #ffffff; }
+        .content-box { max-width: 800px; text-align: center; color: #94a3b8; font-size: 1.1rem; }
+
+        #github-section { background-color: #0b1120; border-top: 1px solid #1e293b; }
     </style>
 </head>
 <body>
@@ -101,70 +104,59 @@
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#stack">STACK</a></li>
+            <li><a href="#github">GITHUB</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <div class="container">
             <div class="hero-text">
-                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px;">— QA SPECIALIST</div>
+                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px;">— TEONA PKHALADZE</div>
                 <h1>Quality Assurance <span>Specialist.</span></h1>
                 <p class="description">
-                    Currently an intern at <b>Binary Forge</b>, bridging the gap between Manual precision and <b>Automation Engineering</b>.
+                    I am currently working as an intern at <b>Binary Forge</b>. 
+                    I am actively developing as an <b>Automation Engineer</b>, with a focus on <b>Java</b> and <b>Selenium</b>.
                 </p>
                 <div class="buttons">
                     <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
-                    <a href="https://linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="json-card">
-                    <span style="color: #94a3b8;">{</span><br>
-                    &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"Intern @ Binary Forge"</span>,<br>
-                    &nbsp;&nbsp;<span class="key">"learning"</span>: <span class="string">"Java & Selenium"</span>,<br>
-                    &nbsp;&nbsp;<span class="key">"mission"</span>: <span class="string">"Automate everything"</span><br>
-                    <span style="color: #94a3b8;">}</span>
+                    <span class="bracket">{</span><br>
+                    &nbsp;&nbsp;<span class="key">"current_role"</span>: <span class="string">"QA Intern"</span>,<br>
+                    &nbsp;&nbsp;<span class="key">"focus"</span>: <span class="string">"Automation"</span>,<br>
+                    &nbsp;&nbsp;<span class="key">"tools"</span>: <span class="bracket">[</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Java"</span>, <span class="string">"Selenium"</span>, <span class="string">"SQL"</span><br>
+                    &nbsp;&nbsp;<span class="bracket">]</span><br>
+                    <span class="bracket">}</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="about" style="background: #0b1120;">
-        <div style="max-width: 800px; text-align: center;">
-            <h2 class="section-title">About Me</h2>
-            <p>IQuality Assurance Specialist (QA).
-
-I am currently working as an intern at Binary Forge.
-
-I am actively developing as an Automation Engineer, with a focus on Java and Selenium..</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="content-box">
+            <p>Dedicated to ensuring software excellence through rigorous testing and a continuous learning mindset. My journey at Binary Forge has allowed me to apply ISTQB principles while transitioning into technical automation to drive efficiency in the testing lifecycle.</p>
         </div>
     </section>
 
     <section id="projects">
-        <div style="width: 100%; max-width: 1100px;">
-            <h2 class="section-title">Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>API Testing</h3>
-                    <p>Testing complex endpoints using Postman and Swagger, ensuring data integrity and security.</p>
-                </div>
-                <div class="card">
-                    <h3>Mobile QC</h3>
-                    <p>Quality control for iOS and Android applications at Binary Forge.</p>
-                </div>
-                <div class="card">
-                    <h3>SQL Database</h3>
-                    <p>Verifying back-end data consistency with advanced SQL queries.</p>
-                </div>
-            </div>
+        <h2 class="section-title">Projects & Experience</h2>
+        <div class="content-box">
+            <p>Specializing in API validation (Postman/Swagger), Manual Mobile QC for iOS/Android, and managing comprehensive bug lifecycles in Jira. Every bug found is a step closer to a perfect user experience.</p>
         </div>
     </section>
 
-    <section id="stack" style="background: #0b1120;">
-        <div style="width: 100%; max-width: 1100px; text-align: center;">
-            <h2 class="section-title">My Stack</h2>
-            <p>Jira • Postman • SQL • Selenium • Java • TestRail • GitHub</p>
+    <section id="github">
+        <h2 class="section-title">Code & Repositories</h2>
+        <div class="content-box">
+            <p>Check out my technical projects, automation scripts, and QA documentation on GitHub.</p>
+            <div style="margin-top: 30px;">
+                <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-cv" target="_blank">View GitHub Profile</a>
+            </div>
         </div>
     </section>
 
