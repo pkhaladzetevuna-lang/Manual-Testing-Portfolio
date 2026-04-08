@@ -43,3 +43,28 @@ The button changes to **"Uploading..."** and stays in that state indefinitely. T
 
 ## 📸 Attachments
 *(Note: In a real project, you would attach a screenshot or screen recording here showing the infinite loading state.)*
+
+---
+
+### 🐛 Bug #6: Keyboard overlaps UI elements on Authorization screen
+**Severity:** Medium | **Priority:** High | **Status:** Open
+
+**Description:**
+On the Authorization screen, when the keyboard opens, it overlaps the input fields and the "Log In" button, preventing the user from seeing what they are typing or proceeding.
+
+**Environment:**
+* **Device:** iPhone 13
+* **OS:** iOS 26.3
+* **Frequency:** 100%
+
+**Steps to Reproduce:**
+1. Open the **Morbedi** application.
+2. Navigate to the **Authorization / Login** screen.
+3. Tap on any input field (Email or Password) to start typing.
+4. Observe the keyboard behavior and the UI.
+
+**Actual Result:**
+The keyboard covers the lower half of the screen, including the "Log In" button and the bottom input field. The view does not scroll up to accommodate the keyboard.
+
+**Expected Result:**
+The UI should be responsive. When the keyboard is active, the view should automatically scroll up or adjust so that all input fields and the action button remain visible above the keyboard.
