@@ -42,7 +42,7 @@
 
         section {
             min-height: 100vh;
-            padding: 100px 50px;
+            padding: 120px 50px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,11 +59,11 @@
         .hero-text { flex: 1.2; }
         .hero-visual { flex: 0.8; }
 
-        h1 { font-size: 3.2rem; margin: 0; color: #ffffff; }
+        h1 { font-size: 3.2rem; margin: 0; color: #ffffff; line-height: 1.2; }
         h1 span { color: #a855f7; }
-        .description { font-size: 1.1rem; color: #94a3b8; margin: 25px 0; }
+        .description { font-size: 1.1rem; color: #94a3b8; margin: 25px 0; max-width: 550px; }
 
-        .buttons { display: flex; gap: 15px; }
+        .buttons { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn {
             text-decoration: none;
             padding: 12px 25px;
@@ -73,7 +73,7 @@
             font-size: 0.9rem;
         }
         .btn-cv { background: #a855f7; color: white; }
-        .btn-outline { border: 1px solid #334155; color: #f1f5f9; }
+        .btn-outline { border: 1px solid #334155; color: #f1f5f9; background: rgba(30, 41, 59, 0.5); }
         .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
         /* JSON Card */
@@ -89,11 +89,10 @@
         .string { color: #22d3ee; }
         .bracket { color: #94a3b8; }
 
-        /* Generic Section Styles */
-        .section-title { font-size: 2.5rem; margin-bottom: 20px; color: #ffffff; }
+        /* Other Sections */
+        .section-title { font-size: 2.5rem; margin-bottom: 25px; color: #ffffff; }
         .content-box { max-width: 800px; text-align: center; color: #94a3b8; font-size: 1.1rem; }
-
-        #github-section { background-color: #0b1120; border-top: 1px solid #1e293b; }
+        #about, #github { background-color: #0b1120; }
     </style>
 </head>
 <body>
@@ -111,7 +110,7 @@
     <section id="home">
         <div class="container">
             <div class="hero-text">
-                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px;">— TEONA PKHALADZE</div>
+                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">— Teona Pkhaladze</div>
                 <h1>Quality Assurance <span>Specialist.</span></h1>
                 <p class="description">
                     I am currently working as an intern at <b>Binary Forge</b>. 
@@ -120,6 +119,7 @@
                 <div class="buttons">
                     <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
                     <a href="https://www.linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-outline" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -136,26 +136,26 @@
         </div>
     </section>
 
-    <section id="about" style="background: #0b1120;">
+    <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="content-box">
-            <p>Dedicated to ensuring software excellence through rigorous testing and a continuous learning mindset. My journey at Binary Forge has allowed me to apply ISTQB principles while transitioning into technical automation to drive efficiency in the testing lifecycle.</p>
+            <p>I am a dedicated QA Specialist at <b>Binary Forge</b> with a strong foundation in Manual Testing. My current goal is to master <b>Automation Engineering</b> using <b>Java</b> and <b>Selenium</b> to enhance software reliability and testing efficiency.</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title">Projects & Experience</h2>
+        <h2 class="section-title">Projects & Skills</h2>
         <div class="content-box">
-            <p>Specializing in API validation (Postman/Swagger), Manual Mobile QC for iOS/Android, and managing comprehensive bug lifecycles in Jira. Every bug found is a step closer to a perfect user experience.</p>
+            <p>Experienced in <b>API Testing (Postman/Swagger)</b>, <b>SQL</b>, and <b>Mobile Quality Control</b>. I focus on meticulous bug reporting and ensuring high-quality user experiences in every release.</p>
         </div>
     </section>
 
     <section id="github">
-        <h2 class="section-title">Code & Repositories</h2>
+        <h2 class="section-title">GitHub Portfolio</h2>
         <div class="content-box">
-            <p>Check out my technical projects, automation scripts, and QA documentation on GitHub.</p>
+            <p>Explore my latest automation scripts, test frameworks, and technical projects.</p>
             <div style="margin-top: 30px;">
-                <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-cv" target="_blank">View GitHub Profile</a>
+                <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-cv" target="_blank">Go to GitHub Profile</a>
             </div>
         </div>
     </section>
