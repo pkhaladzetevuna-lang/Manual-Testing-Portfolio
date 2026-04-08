@@ -24,7 +24,6 @@
   <img src="https://img.shields.io/badge/Trello-0079BF?style=flat&logo=trello&logoColor=white" alt="Trello">
   <img src="https://img.shields.io/badge/Asana-F06A6A?style=flat&logo=asana&logoColor=white" alt="Asana">
   <img src="https://img.shields.io/badge/ClickUp-7B68EE?style=flat&logo=clickup&logoColor=white" alt="ClickUp">
-  <img src="https://img.shields.io/badge/TestCaseLab-FF4500?style=flat&logo=testrail&logoColor=white" alt="TestCaseLab">
 </p>
 
 #### 📡 API Testing
@@ -38,14 +37,6 @@
   <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white" alt="SQL">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white" alt="Figma">
-</p>
-
-#### 🤖 Automation & Performance
-<p align="left">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Playwright-45BA4B?style=flat&logo=playwright&logoColor=white" alt="Playwright">
-  <img src="https://img.shields.io/badge/JMeter-D22128?style=flat&logo=apachejmeter&logoColor=white" alt="JMeter">
 </p>
 
 ---
@@ -56,7 +47,22 @@
 <p align="center">
   <img src="./Automation.png" alt="Java Automation Logic" width="600">
 </p>
-<p align="right"><i>Detailed script: <a href="./automation-scripts.md">View Code</a></i></p>
 
-#### 📡 API Testing & Validation
-<p align
+#### 📡 API Testing & Validation (Postman)
+<p align="center">
+  <img src="./profile-api.png" alt="API Testing Postman" width="600">
+</p>
+
+---
+
+### 💼 Professional Experience
+* **QA Intern | [cite_start]Binary Forge** (03/2026 - Present) [cite: 41, 59]
+  * > Mobile application testing (Android & iOS) on real-world projects. [cite: 42]
+* **QA Intern | [cite_start]ODIN** (02/2026 - 03/2026) [cite: 50, 60]
+  * [cite_start]> Conducted User Acceptance Testing (UAT) and identified critical bugs. [cite: 54, 57]
+
+---
+
+<p align="center">
+  <i>"Observation is my API. Every bug found is a step closer to perfection."</i>
+</p>
