@@ -1,0 +1,26 @@
+---
+
+## 🐛 Sample Bug Reports
+
+### Bug #1: Profile Picture Upload fails without error message for large files
+**Severity:** Medium | **Priority:** Medium | **Status:** Open
+
+**Description:**
+When a user attempts to upload a profile picture larger than 5MB, the system hangs on "Uploading..." state and never shows an error message.
+
+**Steps to Reproduce:**
+1. Log in to the application.
+2. Navigate to **Profile Settings**.
+3. Click on the **Change Photo** button.
+4. Select a JPEG file larger than 10MB (e.g., `high_res_photo.jpg`).
+5. Observe the upload process.
+
+**Expected Result:**
+The system should show an error message: "File size exceeds the 5MB limit. Please upload a smaller file."
+
+**Actual Result:**
+The button stays in the "Uploading..." state indefinitely, and no error message is displayed. The user is forced to refresh the page.
+
+**Environment:**
+* **OS:** Windows 11
+* **Browser:** Chrome (Version 122.0.6261.129)
