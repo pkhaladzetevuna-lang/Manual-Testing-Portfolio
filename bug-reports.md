@@ -1,70 +1,69 @@
-# 🐛 Bug Report: Profile Picture Upload Issue
+# 🐛 Comprehensive Bug Reports Collection
 
-### [BUG-001] Profile Picture Upload fails without error message for large files
-
----
-
-## 📝 Description
-When a user attempts to upload a profile picture larger than the allowed limit (5MB), the system stays in an infinite "Uploading..." state. No error message is displayed to inform the user about the file size limit.
-
-| Attribute | Details |
-| :--- | :--- |
-| **Severity** | Medium |
-| **Priority** | High |
-| **Status** | Open |
-| **Type** | Functional Bug |
+This document contains a collection of identified defects across various web and mobile applications, categorized by their impact and type.
 
 ---
 
-## 🚀 Steps to Reproduce
-1. Log in to the application with valid credentials.
-2. Navigate to the **Profile Settings** page.
-3. Click on the **"Change Photo"** button.
-4. Select a JPEG/PNG file larger than 10MB (e.g., `test_large_image.jpg`).
-5. Click **"Open/Upload"** and observe the behavior.
+### [BUG-001] Profile Picture Upload fails without error message
+**Severity:** Medium | **Priority:** Medium | **Status:** Open
+* **Description:** System hangs on "Uploading..." state when a file exceeds 5MB.
+* **Steps:** Log in > Profile Settings > Change Photo > Select 10MB+ file.
+* **Actual Result:** Infinite loading state, no error message.
+* **Expected Result:** Error message: "File size exceeds the 5MB limit."
 
 ---
 
-## 🔍 Expected Result
-The system should validate the file size and display a clear error message: 
-> *"File size exceeds the 5MB limit. Please upload a smaller file."*
-
-## ❌ Actual Result
-The button changes to **"Uploading..."** and stays in that state indefinitely. The user interface becomes unresponsive, and no error message appears.
-
----
-
-## 💻 Environment
-* **OS:** Windows 11
-* **Browser:** Google Chrome (Version 122.0.6261.129)
-* **Screen Resolution:** 1920x1080
+### [BUG-002] OTP Auto-fill functionality is not working on iOS
+**Severity:** Minor | **Priority:** Medium | **Status:** Open
+* **Environment:** iPhone 12 Pro Max (iOS 26.3)
+* **Description:** Incoming SMS OTP code is not suggested or auto-filled by the system.
+* **Steps:** Open ODIN > Identomat > Enter Data > Save & Continue > Receive SMS.
+* **Actual Result:** Code is received but not detected by the input field.
+* **Expected Result:** System should suggest the code for auto-fill.
 
 ---
 
-## 📸 Attachments
-*(Note: In a real project, you would attach a screenshot or screen recording here showing the infinite loading state.)*
+### [BUG-003] Generic "Bad Request" error on Invalid Email
+**Severity:** Minor | **Priority:** Medium | **Status:** Open
+* **Environment:** iPhone 13 (iOS 26.2)
+* **Description:** System shows a technical error instead of a user-friendly validation message.
+* **Steps:** Open Morbed > Registration > Enter invalid email (testmail.com) > Register.
+* **Actual Result:** Pop-up says "Bad Request".
+* **Expected Result:** Pop-up should say "Please enter a valid email" and the field should turn red.
 
 ---
 
-### 🐛 Bug #6: Keyboard overlaps UI elements on Authorization screen
+### [BUG-004] Keyboard overlaps UI elements on Authorization screen
 **Severity:** Medium | **Priority:** High | **Status:** Open
+* **Environment:** iPhone 13 (iOS 26.3)
+* **Description:** Keyboard covers the "Log In" button and lower input fields.
+* **Steps:** Open Morbedi > Go to Login > Tap on Password field.
+* **Actual Result:** Keyboard covers the button; screen doesn't scroll up.
+* **Expected Result:** View should scroll up so all elements remain visible.
 
-**Description:**
-On the Authorization screen, when the keyboard opens, it overlaps the input fields and the "Log In" button, preventing the user from seeing what they are typing or proceeding.
+---
 
-**Environment:**
-* **Device:** iPhone 13
-* **OS:** iOS 26.3
-* **Frequency:** 100%
+### [BUG-005] User can register with a Future Date of Birth (Logic Bug)
+**Severity:** Medium | **Priority:** High | **Status:** Open
+* **Description:** The system allows registration for users with birth dates in the future.
+* **Steps:** Registration > Date of Birth > Select "2027" > Submit.
+* **Actual Result:** Registration successful.
+* **Expected Result:** Validation error: "Birth date cannot be in the future."
 
-**Steps to Reproduce:**
-1. Open the **Morbedi** application.
-2. Navigate to the **Authorization / Login** screen.
-3. Tap on any input field (Email or Password) to start typing.
-4. Observe the keyboard behavior and the UI.
+---
 
-**Actual Result:**
-The keyboard covers the lower half of the screen, including the "Log In" button and the bottom input field. The view does not scroll up to accommodate the keyboard.
+### [BUG-006] Search Results disappear after Screen Rotation (UI/UX)
+**Severity:** Minor | **Priority:** Low | **Status:** Open
+* **Description:** Rotating the device from Portrait to Landscape clears the search results.
+* **Steps:** Search for any item > View results > Rotate phone to Landscape mode.
+* **Actual Result:** Search results disappear, and the user is taken back to the empty search bar.
+* **Expected Result:** Search results should remain visible and adjust to the new screen orientation.
 
-**Expected Result:**
-The UI should be responsive. When the keyboard is active, the view should automatically scroll up or adjust so that all input fields and the action button remain visible above the keyboard.
+---
+
+### [BUG-007] "Resend OTP" button is active immediately (Spam Risk)
+**Severity:** Medium | **Priority:** Medium | **Status:** Open
+* **Description:** Users can click "Resend" infinitely without any time delay.
+* **Steps:** Request OTP > Immediately click "Resend" 10 times.
+* **Actual Result:** 10 different SMS messages are sent.
+* **Expected Result:** Button should be disabled for 60 seconds after the first click to prevent SMS spam/costs.
