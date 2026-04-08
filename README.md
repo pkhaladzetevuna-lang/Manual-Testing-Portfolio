@@ -31,7 +31,7 @@ Hi! I'm **Teona**, a QA Manual Testing student and currently a QA Intern at **Bi
 ---
 
 ### 🌟 Featured: Automation & Logic
-In this portfolio, I emphasize the bridge between Manual and Automation testing. My scripts aren't just code; they are built on **Boundary Value Analysis (BVA)** and **Equivalence Partitioning** to ensure maximum test coverage.
+In this portfolio, I emphasize the bridge between Manual and Automation testing. My scripts are built on **Boundary Value Analysis (BVA)** and **Equivalence Partitioning** to ensure maximum test coverage and logic accuracy.
 
 > "Quality is not an act, it is a habit."
 
