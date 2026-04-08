@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teona Pkhaladze | QA Portfolio</title>
+    <title>Teona Pkhaladze | QA Engineer</title>
     <style>
         body {
             font-family: 'Inter', -apple-system, sans-serif;
-            background-color: #0f172a; /* ძალიან მუქი ლურჯი/შავი ფონი */
+            background-color: #0f172a; /* ღრმა მუქი ფონი */
             color: #f1f5f9;
             margin: 0;
             display: flex;
@@ -21,7 +21,7 @@
             width: 90%;
             justify-content: space-between;
             align-items: center;
-            gap: 50px;
+            gap: 60px;
         }
         .left-content { flex: 1.2; }
         .right-content { flex: 0.8; }
@@ -31,20 +31,23 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
         }
         h1 {
-            font-size: 4rem;
+            font-size: 4.2rem;
             margin: 0;
             color: #ffffff;
             line-height: 1.1;
+            font-weight: 800;
         }
-        h1 span { color: #a855f7; }
+        h1 span {
+            color: #a855f7;
+        }
         p {
             font-size: 1.15rem;
-            line-height: 1.7;
-            color: #94a3b8; /* ნაცრისფერი ტექსტი უკეთესი წაკითხვადობისთვის */
+            line-height: 1.8;
+            color: #94a3b8;
             margin-top: 25px;
         }
 
@@ -52,7 +55,7 @@
         .btn {
             text-decoration: none;
             padding: 14px 28px;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             transition: 0.3s;
         }
@@ -79,15 +82,16 @@
             position: relative;
         }
         .json-card::before {
-            content: "● ● ●";
+            content: "status: active";
             position: absolute;
             top: 15px;
-            left: 20px;
-            color: #475569;
-            letter-spacing: 3px;
+            right: 25px;
+            font-size: 0.7rem;
+            color: #22d3ee;
+            text-transform: uppercase;
         }
-        .key { color: #a855f7; } /* იასამნისფერი გასაღებები */
-        .string { color: #22d3ee; } /* ცისფერი მნიშვნელობები */
+        .key { color: #a855f7; }
+        .string { color: #22d3ee; }
         .bracket { color: #94a3b8; }
     </style>
 </head>
@@ -95,13 +99,13 @@
 
 <div class="container">
     <div class="left-content">
-        <div class="label">— QA Portfolio</div>
+        <div class="label">— Quality Assurance Engineer</div>
         <h1>Teona <br><span>Pkhaladze.</span></h1>
         <p>
-            <b>Manual QA Tester</b> specialized in software reliability. 
-            Currently interning at <b>Binary Forge</b>. Experienced in 
-            <b>API Testing</b> and <b>SQL</b>, with a strong focus on 
-            transitioning to <b>Test Automation</b>.
+            <b>Manual QA Tester</b> with a focus on precision and reliability. 
+            Currently interning at <b>Binary Forge</b>, specializing in 
+            <b>API Testing</b> and <b>SQL</b>. Dedicated to ensuring bug-free 
+            user experiences while transitioning to <b>Test Automation</b>.
         </p>
         <div class="buttons">
             <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
@@ -112,12 +116,11 @@
 
     <div class="right-content">
         <div class="json-card">
-            <br>
             <span class="bracket">{</span><br>
             &nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Teona"</span>,<br>
             &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"QA Manual"</span>,<br>
             &nbsp;&nbsp;<span class="key">"internship"</span>: <span class="string">"Binary Forge"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"tools"</span>: <span class="bracket">[</span><br>
+            &nbsp;&nbsp;<span class="key">"stack"</span>: <span class="bracket">[</span><br>
             &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Postman"</span>, <span class="string">"SQL"</span>, <span class="string">"Jira"</span><br>
             &nbsp;&nbsp;<span class="bracket">]</span><br>
             <span class="bracket">}</span>
