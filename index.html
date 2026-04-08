@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +10,36 @@
         * { scroll-behavior: smooth; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a; 
+            background: radial-gradient(circle at center, #1e1b4b, #030712); /* Deep space gradient like WendoJ */
             color: #f1f5f9;
             margin: 0;
             line-height: 1.6;
+            min-height: 100vh;
         }
 
-        /* Navigation */
+        /* Fixed Navigation Bar with Blur Effect */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(10px);
-            padding: 20px 50px;
+            background: rgba(3, 7, 18, 0.7); /* Translucent dark background */
+            backdrop-filter: blur(12px); /* Blurred glass effect like WendoJ */
+            padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            border-bottom: 1px solid #1e293b;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .logo { font-weight: 800; color: #a855f7; font-size: 1.2rem; }
+        .logo { font-weight: 800; color: #f8fafc; font-size: 1.1rem; }
+        .logo span { color: #a855f7; }
         nav ul { list-style: none; display: flex; gap: 30px; margin: 0; }
         nav ul li a { 
             text-decoration: none; 
             color: #94a3b8; 
-            font-size: 0.9rem; 
+            font-size: 0.8rem; 
             font-weight: 600; 
+            text-transform: lowercase; /* Lowercase menu like WendoJ */
             transition: 0.3s;
         }
         nav ul li a:hover { color: #a855f7; }
@@ -49,7 +53,7 @@
             flex-direction: column;
         }
 
-        /* Hero Section */
+        /* Home Section */
         .container {
             display: flex;
             max-width: 1100px;
@@ -59,62 +63,90 @@
         .hero-text { flex: 1.2; }
         .hero-visual { flex: 0.8; }
 
-        h1 { font-size: 3.2rem; margin: 0; color: #ffffff; line-height: 1.2; }
-        h1 span { color: #a855f7; }
-        .description { font-size: 1.1rem; color: #94a3b8; margin: 25px 0; max-width: 550px; }
+        /* WendoJ style header */
+        h1 { 
+            font-size: 4rem; 
+            margin: 0; 
+            color: #ffffff; 
+            line-height: 1.1; 
+            font-weight: 800; 
+            letter-spacing: -2px; 
+        }
+        h1 span { 
+            color: #a855f7; /* Electric Purple */
+            -webkit-text-stroke: 1px rgba(255,255,255,0.2); /* Thin outline like WendoJ */
+        }
+        
+        .description { 
+            font-size: 1.1rem; 
+            color: #94a3b8; 
+            margin: 30px 0; 
+            max-width: 550px; 
+        }
 
         .buttons { display: flex; gap: 12px; flex-wrap: wrap; }
         .btn {
             text-decoration: none;
             padding: 12px 25px;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: 600;
             transition: 0.3s;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
         }
-        .btn-cv { background: #a855f7; color: white; }
-        .btn-outline { border: 1px solid #334155; color: #f1f5f9; background: rgba(30, 41, 59, 0.5); }
+        /* Buttons like WendoJ's Learn More & Learn Less */
+        .btn-cv { 
+            background: #a855f7; 
+            color: white; 
+            box-shadow: 0 10px 15px rgba(168, 85, 247, 0.4);
+        }
+        .btn-outline { 
+            border: 1px solid #334155; 
+            color: #f1f5f9; 
+            background: rgba(30, 41, 59, 0.3); 
+            backdrop-filter: blur(8px);
+        }
         .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        /* JSON Card */
+        /* WendoJ-style Glassmorphism JSON Card */
         .json-card {
-            background-color: #1e293b;
+            background-color: rgba(30, 41, 59, 0.4); /* Translucent blur card */
             padding: 35px;
-            border-radius: 20px;
+            border-radius: 12px; /* Less rounded than standard cards */
             font-family: 'Fira Code', monospace;
-            border: 1px solid #334155;
+            border: 1px solid rgba(255, 255, 255, 0.05);
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            backdrop-filter: blur(12px); /* Blur effect on card */
         }
-        .key { color: #a855f7; }
-        .string { color: #22d3ee; }
+        .key { color: #22d3ee; } /* Cyan for keys like WendoJ's visual accent */
+        .string { color: #e9d5ff; } /* Lighter purple for strings */
         .bracket { color: #94a3b8; }
-
-        /* Other Sections */
+        
+        /* Subsections like WendoJ's grid layout */
         .section-title { font-size: 2.5rem; margin-bottom: 25px; color: #ffffff; }
         .content-box { max-width: 800px; text-align: center; color: #94a3b8; font-size: 1.1rem; }
-        #about, #github { background-color: #0b1120; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">TEONA.QA</div>
+        <div class="logo">TEONA<span>.QA</span></div>
         <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#github">GITHUB</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#github">github</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <div class="container">
             <div class="hero-text">
-                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">— Teona Pkhaladze</div>
+                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem;">— Teona Pkhaladze</div>
                 <h1>Quality Assurance <span>Specialist.</span></h1>
                 <p class="description">
-                    I am currently working as an intern at <b>Binary Forge</b>. 
-                    I am actively developing as an <b>Automation Engineer</b>, with a focus on <b>Java</b> and <b>Selenium</b>.
+                    I am currently working as an intern at Binary Forge. I am actively developing as an Automation Engineer, with a focus on Java and Selenium.
                 </p>
                 <div class="buttons">
                     <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
@@ -139,23 +171,23 @@
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="content-box">
-            <p>I am a dedicated QA Specialist at <b>Binary Forge</b> with a strong foundation in Manual Testing. My current goal is to master <b>Automation Engineering</b> using <b>Java</b> and <b>Selenium</b> to enhance software reliability and testing efficiency.</p>
+            <p>Dedicated QA Specialist at Binary Forge, focusing on manual testing precision while mastering Java & Selenium for automated testing efficiency.</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title">Projects & Skills</h2>
+        <h2 class="section-title">Projects & Experience</h2>
         <div class="content-box">
-            <p>Experienced in <b>API Testing (Postman/Swagger)</b>, <b>SQL</b>, and <b>Mobile Quality Control</b>. I focus on meticulous bug reporting and ensuring high-quality user experiences in every release.</p>
+            <p>Experienced in API Testing (Postman/Swagger), SQL, and Mobile Quality Control (iOS/Android) within an Agile environment.</p>
         </div>
     </section>
 
     <section id="github">
         <h2 class="section-title">GitHub Portfolio</h2>
         <div class="content-box">
-            <p>Explore my latest automation scripts, test frameworks, and technical projects.</p>
+            <p>Explore my latest QA frameworks, automation scripts, and technical documentation.</p>
             <div style="margin-top: 30px;">
-                <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-cv" target="_blank">Go to GitHub Profile</a>
+                <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-cv" target="_blank">View GitHub Profile</a>
             </div>
         </div>
     </section>
