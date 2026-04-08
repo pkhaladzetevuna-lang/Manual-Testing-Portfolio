@@ -16,48 +16,52 @@
 
 ---
 
-### 🛠 Tech Stack & Skills
-| Category | Tools & Technologies |
-| :--- | :--- |
-| **Testing Management** | Jira, Trello, Asana, ClickUp, TestCaseLab, TestRail |
-| **API Testing** | Postman, Swagger |
-| **Databases & Web** | SQL, HTML/CSS, DevTools |
-| **Performance & UI** | JMeter, Figma |
-| **Automation** | Java (In Progress), Playwright |
+### 🎨 Tech Stack & Skills
 
----
-
-### 🚀 Projects & Highlights
-
-#### 🤖 Test Automation (Java Logic)
-*Demonstrating boundary value analysis and conditional logic for automated workflows.*
-<p align="center">
-  <img src="./Automation.png" alt="Java Automation Logic" width="600">
+#### Testing Management
+<p align="left">
+  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white" alt="Jira">
+  <img src="https://img.shields.io/badge/Trello-0079BF?style=flat&logo=trello&logoColor=white" alt="Trello">
+  <img src="https://img.shields.io/badge/Asana-F06A6A?style=flat&logo=asana&logoColor=white" alt="Asana">
+  <img src="https://img.shields.io/badge/ClickUp-7B68EE?style=flat&logo=clickup&logoColor=white" alt="ClickUp">
 </p>
-<p align="right"><i>Detailed script: <a href="./automation-scripts.md">View Code</a></i></p>
 
-#### 📡 API Testing & Documentation
-*Structured API validation and collection management.*
-<p align="center">
-  <img src="./profile-api.png" alt="API Testing Postman" width="600">
+#### API Testing
+<p align="left">
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white" alt="Postman">
+  <img src="https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=swagger&logoColor=white" alt="Swagger">
 </p>
-<p align="right"><i>Collections: <a href="./api-testing.md">View Documentation</a></i></p>
+
+#### Databases & Web
+<p align="left">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3">
+</p>
+
+#### Performance & Automation
+<p align="left">
+  <img src="https://img.shields.io/badge/JMeter-D22128?style=flat&logo=apachejmeter&logoColor=white" alt="JMeter">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Playwright-45BA4B?style=flat&logo=playwright&logoColor=white" alt="Playwright">
+</p>
 
 ---
 
 ### 📂 Repository Structure
-* 📋 [**Test Case Checklists**](./checklists.md) — *Structured functional verification.*
-* 🐛 [**Bug Reports**](./bug-reports.md) — *Detailed defect documentation and lifecycle management.*
-* 🗄️ [**SQL Queries**](./sql-queries.md) — *Database integrity and verification scripts.*
+* 📋 [**Test Case Checklists**](./checklists.md)
+* 🐛 [**Bug Reports**](./bug-reports.md)
+* 🤖 [**Automation Scripts**](./automation-scripts.md)
 
 ---
 
 ### 💼 Professional Experience
 * **QA Intern | Binary Forge** (03/2026 - Present)
-  * [cite_start]Mobile application testing (Android & iOS) on real-world projects[cite: 42].
-  * [cite_start]Executing functional and UI/UX validation[cite: 44, 45].
+  * > Mobile application testing (Android & iOS) on real-world projects. Functional and UI/UX validation.
 * **QA Intern | ODIN** (02/2026 - 03/2026)
-  * [cite_start]Conducted User Acceptance Testing (UAT) and identified critical bugs[cite: 54, 57].
+  * > Conducted User Acceptance Testing (UAT) and identified critical bugs.
+
+---
 
 <p align="center">
   <i>"Observation is my API. Every bug found is a step closer to perfection."</i>
