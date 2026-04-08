@@ -1,46 +1,41 @@
+# 👩‍💻 QA Engineer Portfolio | Teona P.
+
 <p align="center">
-  <img src="./profile-api.png" alt="QA Engineer Profile" width="100%">
+  <img src="./personal-card.png" alt="Teona's QA Profile" width="600">
 </p>
 
-# 🚀 Welcome to My QA Portfolio
+<p align="center">
+  <a href="შენი_LinkedIn_ლინკი">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:შენი_მეილი">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</p>
 
-Hi! I'm **Teona**, a QA Manual Testing student and currently a QA Intern at **Binary Forge**. This repository showcases my professional growth, technical skills, and hands-on experience in ensuring software quality.
+---
+
+### 🛠 Tech Stack
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Testing** | Manual Testing, STLC, SDLC, Bug Reporting (Jira) |
+| **API** | Postman, Swagger |
+| **Databases** | SQL (PostgreSQL, MySQL) |
+| **Automation** | Java, Playwright |
 
 ---
 
 ### 📂 Repository Structure
-
-* [📋 **Test Case Checklists**](./checklists.md)
-* [🐛 **Bug Reports Collection**](./bug-reports.md)
-* [📡 **API Testing (Postman)**](./api-testing.md)
-* [🗄️ **SQL Queries**](./sql-queries.md)
-* [🤖 **Automation Scripts**](./automation-scripts.md)
-* [📁 **QA Assets**](./assets.md)
+* 📋 [**Test Case Checklists**](./checklists.md)
+* 🐛 [**Bug Reports**](./bug-reports.md)
+* 📡 [**API Testing**](./api-testing.md)
+* 🤖 [**Automation Scripts**](./automation-scripts.md)
 
 ---
 
-### 🌟 Featured: Automation & Java Logic
-Below is a demonstration of my Java automation logic, focusing on boundary value analysis.
+### 🚀 Professional Context
+Currently serving as a **QA Intern at Binary Forge**, working on quality control for mobile (iOS/Android) and web applications.
 
 <p align="center">
-  <img src="./Automation.png" alt="Java Automation Logic" width="100%">
-</p>
-
----
-
-### 🛠 Tech Stack & Tools
-* **Testing:** Manual Testing, STLC, SDLC, Bug Reporting (Jira)
-* **API:** Postman, Swagger
-* **Databases:** SQL (PostgreSQL, MySQL)
-* **Automation:** Java, Playwright
-* **Platforms:** Web, Mobile (iOS/Android)
-
----
-
-### 💬 Connect with Me
-* **LinkedIn:** [Insert Link]
-* **Email:** [Insert Email]
-
-<p align="center">
-  <i>Every bug found is a step closer to perfection.</i>
+  <i>"Observation is my API. Every bug found is a step closer to perfection."</i>
 </p>
