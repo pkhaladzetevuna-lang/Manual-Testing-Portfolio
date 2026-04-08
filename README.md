@@ -9,8 +9,6 @@ This checklist covers the functional testing of the User Registration module.
 | 4 | Leave mandatory fields empty | Form should not submit, highlight empty fields | High |
 | 5 | Verify "Terms & Conditions" checkbox | Cannot register without checking the box | Medium |
 
-
-
 Step,Requirement / Test Case,Expected Result,Priority
 1,Login with valid email and password,User is logged in and redirected to home page,High
 2,Login with invalid password,"Error message: ""Invalid credentials""",High
@@ -18,3 +16,6 @@ Step,Requirement / Test Case,Expected Result,Priority
 4,"""Show Password"" icon functionality",Password becomes visible/masked when clicked,Medium
 5,"Verify ""Remember Me"" checkbox",User session is saved after closing browser,Low
 6,Leave email or password field empty,System shows validation error for required fields,High
+
+
+
