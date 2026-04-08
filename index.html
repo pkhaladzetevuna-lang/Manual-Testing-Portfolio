@@ -3,130 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teona Pkhaladze | QA Portfolio</title>
+    <title>Teona Pkhaladze | QA Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
     <style>
+        * { scroll-behavior: smooth; box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: #0f172a; 
             color: #f1f5f9;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            line-height: 1.6;
         }
-        .container {
+
+        /* მენიუ (Navbar) */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 20px 50px;
             display: flex;
-            max-width: 1000px;
-            width: 90%;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
         }
-        .left-content { flex: 1.2; }
-        .right-content { flex: 0.8; }
+        .logo { font-weight: 800; color: #a855f7; font-size: 1.2rem; }
+        nav ul { list-style: none; display: flex; gap: 30px; margin: 0; }
+        nav ul li a { 
+            text-decoration: none; 
+            color: #94a3b8; 
+            font-size: 0.9rem; 
+            font-weight: 600; 
+            transition: 0.3s;
+        }
+        nav ul li a:hover { color: #a855f7; }
 
-        .label {
-            color: #a855f7;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.8rem;
-            margin-bottom: 12px;
+        /* სექციების საერთო სტილი */
+        section {
+            min-height: 100vh;
+            padding: 100px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        h1 {
-            font-size: 3.2rem; /* სათაური დაპატარავდა */
-            margin: 0;
-            line-height: 1.2;
-            font-weight: 800;
-            color: #ffffff;
+
+        /* Home Section */
+        #home .container {
+            display: flex;
+            max-width: 1100px;
+            gap: 50px;
+            align-items: center;
         }
+        .hero-text { flex: 1.2; }
+        .hero-visual { flex: 0.8; }
+
+        h1 { font-size: 3.5rem; margin: 0; color: #ffffff; }
         h1 span { color: #a855f7; }
-        
-        .description {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #94a3b8;
-            margin-top: 20px;
-        }
-        .description b { color: #f1f5f9; }
+        .description { font-size: 1.2rem; color: #94a3b8; margin: 25px 0; }
 
-        .buttons { margin-top: 35px; display: flex; gap: 15px; }
+        .buttons { display: flex; gap: 15px; }
         .btn {
             text-decoration: none;
             padding: 12px 25px;
             border-radius: 8px;
             font-weight: 600;
             transition: 0.3s;
-            font-size: 0.9rem;
         }
-        .btn-cv { 
-            background-color: #a855f7; 
-            color: white; 
-            box-shadow: 0 8px 15px -3px rgba(168, 85, 247, 0.3);
-        }
-        .btn-outline { 
-            border: 1px solid #334155; 
-            color: #f1f5f9; 
-            background: rgba(30, 41, 59, 0.5);
-        }
-        .btn:hover { transform: translateY(-2px); filter: brightness(1.2); }
+        .btn-cv { background: #a855f7; color: white; }
+        .btn-outline { border: 1px solid #334155; color: #f1f5f9; }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
+        /* JSON Card */
         .json-card {
             background-color: #1e293b;
-            padding: 35px;
+            padding: 30px;
             border-radius: 20px;
             font-family: 'Fira Code', monospace;
-            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
             border: 1px solid #334155;
-            position: relative;
-        }
-        .json-card::before {
-            content: "status: learning automation";
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 0.65rem;
-            color: #22d3ee;
-            text-transform: uppercase;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
         .key { color: #a855f7; }
         .string { color: #22d3ee; }
-        .bracket { color: #94a3b8; }
+
+        /* სხვა სექციები */
+        .section-title { font-size: 2.5rem; margin-bottom: 30px; text-align: center; width: 100%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%; max-width: 1100px; }
+        .card { background: #1e293b; padding: 30px; border-radius: 15px; border: 1px solid #334155; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="left-content">
-        <div class="label">— Teona Pkhaladze</div>
-        <h1>Quality Assurance <span>Specialist.</span></h1>
-        <div class="description">
-            I am currently working as an intern at <b>Binary Forge</b>. 
-            I am actively developing as an <b>Automation Engineer</b>, 
-            with a focus on <b>Java</b> and <b>Selenium</b>.
-        </div>
-        <div class="buttons">
-            <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
-            <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-outline" target="_blank">GitHub</a>
-        </div>
-    </div>
+    <nav>
+        <div class="logo">TEONA.QA</div>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#stack">STACK</a></li>
+        </ul>
+    </nav>
 
-    <div class="right-content">
-        <div class="json-card">
-            <span class="bracket">{</span><br>
-            &nbsp;&nbsp;<span class="key">"current_role"</span>: <span class="string">"QA Intern"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"company"</span>: <span class="string">"Binary Forge"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"learning"</span>: <span class="bracket">[</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Java"</span>, <span class="string">"Selenium"</span><br>
-            &nbsp;&nbsp;<span class="bracket">]</span>,<br>
-            &nbsp;&nbsp;<span class="key">"skills"</span>: <span class="bracket">[</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Postman"</span>, <span class="string">"SQL"</span>, <span class="string">"Jira"</span><br>
-            &nbsp;&nbsp;<span class="bracket">]</span><br>
-            <span class="bracket">}</span>
+    <section id="home">
+        <div class="container">
+            <div class="hero-text">
+                <div style="color: #a855f7; font-weight: 700; margin-bottom: 10px;">— QA SPECIALIST</div>
+                <h1>Quality Assurance <span>Specialist.</span></h1>
+                <p class="description">
+                    Currently an intern at <b>Binary Forge</b>, bridging the gap between Manual precision and <b>Automation Engineering</b>.
+                </p>
+                <div class="buttons">
+                    <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
+                    <a href="https://linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="json-card">
+                    <span style="color: #94a3b8;">{</span><br>
+                    &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"Intern @ Binary Forge"</span>,<br>
+                    &nbsp;&nbsp;<span class="key">"learning"</span>: <span class="string">"Java & Selenium"</span>,<br>
+                    &nbsp;&nbsp;<span class="key">"mission"</span>: <span class="string">"Automate everything"</span><br>
+                    <span style="color: #94a3b8;">}</span>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
+
+    <section id="about" style="background: #0b1120;">
+        <div style="max-width: 800px; text-align: center;">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a motivated Manual QA Tester with a strong focus on software quality and user experience. Currently, I am expanding my horizons by mastering Automation Engineering to build more efficient testing workflows.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div style="width: 100%; max-width: 1100px;">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>API Testing</h3>
+                    <p>Testing complex endpoints using Postman and Swagger, ensuring data integrity and security.</p>
+                </div>
+                <div class="card">
+                    <h3>Mobile QC</h3>
+                    <p>Quality control for iOS and Android applications at Binary Forge.</p>
+                </div>
+                <div class="card">
+                    <h3>SQL Database</h3>
+                    <p>Verifying back-end data consistency with advanced SQL queries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" style="background: #0b1120;">
+        <div style="width: 100%; max-width: 1100px; text-align: center;">
+            <h2 class="section-title">My Stack</h2>
+            <p>Jira • Postman • SQL • Selenium • Java • TestRail • GitHub</p>
+        </div>
+    </section>
 
 </body>
 </html>
