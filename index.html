@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Inter', -apple-system, sans-serif;
-            background-color: #0a192f; /* მუქი ლურჯი ფონი */
-            color: #ccd6f6;
+            background-color: #f8fafc; /* ძალიან ღია, სუფთა ნაცრისფერი */
+            color: #1e293b;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -17,113 +17,115 @@
         }
         .container {
             display: flex;
-            max-width: 1000px;
+            max-width: 1050px;
             width: 90%;
             justify-content: space-between;
             align-items: center;
         }
         .left-content {
-            flex: 1;
-            padding-right: 50px;
+            flex: 1.2;
+            padding-right: 60px;
         }
         .right-content {
-            flex: 1;
+            flex: 0.8;
         }
         .label {
-            color: #64ffda; /* ცისფერი აქცენტი */
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
+            color: #7c3aed; /* ელეგანტური იასამნისფერი */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: 3.8rem;
             margin: 0;
-            color: #e6f1ff;
-            line-height: 1.1;
+            color: #0f172a;
+            line-height: 1;
+            font-weight: 800;
         }
         h1 span {
-            color: #64ffda;
+            color: #7c3aed;
         }
         p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #8892b0;
-            margin-top: 20px;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #475569;
+            margin-top: 25px;
         }
         .buttons {
             margin-top: 40px;
         }
         .btn {
             text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 4px;
-            font-weight: bold;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-weight: 600;
             margin-right: 15px;
             display: inline-block;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         .btn-cv { 
-            background-color: transparent; 
-            color: #64ffda; 
-            border: 1px solid #64ffda;
+            background-color: #7c3aed; 
+            color: white;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.4);
         }
         .btn-cv:hover {
-            background-color: rgba(100, 255, 218, 0.1);
+            transform: translateY(-2px);
+            background-color: #6d28d9;
         }
         .btn-outline { 
-            color: #8892b0; 
-            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+            color: #64748b;
+            background: white;
         }
         .btn-outline:hover {
-            color: #64ffda;
+            border-color: #7c3aed;
+            color: #7c3aed;
         }
 
-        /* განახლებული JSON ბარათი */
+        /* JSON Card - რბილი და თანამედროვე */
         .json-card {
-            background-color: #112240;
-            color: #8892b0;
+            background-color: #ffffff;
+            color: #475569;
             padding: 35px;
-            border-radius: 8px;
-            font-family: 'Fira Code', 'Courier New', monospace;
-            box-shadow: 0 10px 30px rgba(2, 12, 27, 0.7);
+            border-radius: 20px;
+            font-family: 'Fira Code', monospace;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
             font-size: 0.9rem;
-            border-left: 2px solid #64ffda;
+            border: 1px solid #f1f5f9;
         }
-        .key { color: #64ffda; }
-        .string { color: #e6f1ff; }
-        .bracket { color: #ccd6f6; }
+        .key { color: #7c3aed; font-weight: bold; }
+        .string { color: #0f172a; }
+        .bracket { color: #94a3b8; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="left-content">
-        <div class="label">Hi, my name is</div>
-        <h1>Teona <span>Pkhaladze.</span></h1>
+        <div class="label">— Quality Assurance</div>
+        <h1>Teona <br><span>Pkhaladze.</span></h1>
         <p>
-            I am a <b>Manual QA Tester</b> with an analytical mindset. 
-            Currently ensuring software excellence through my internship at <b>Binary Forge</b>. 
-            I specialize in <b>API Testing</b> and <b>SQL</b>, while effectively 
-            transitioning into the world of <b>Test Automation</b>.
+            <b>Manual QA Tester</b> with a focus on precision and reliability. 
+            Currently contributing to software excellence at <b>Binary Forge</b>. 
+            Skilled in <b>API Testing</b> and <b>SQL</b>, with a growing focus on <b>Test Automation</b>.
         </p>
         <div class="buttons">
             <a href="./Teona_Pkhaladze.Resume.pdf" class="btn btn-cv">Download CV</a>
             <a href="https://www.linkedin.com/in/teona-pkhaladze-20aba722b" class="btn btn-outline" target="_blank">LinkedIn</a>
-            <a href="https://github.com/pkhaladzetevuna-lang" class="btn btn-outline" target="_blank">GitHub</a>
         </div>
     </div>
 
     <div class="right-content">
         <div class="json-card">
             <span class="bracket">{</span><br>
-            &nbsp;&nbsp;<span class="key">"expertise"</span>: <span class="string">"Manual QA"</span>,<br>
+            &nbsp;&nbsp;<span class="key">"role"</span>: <span class="string">"QA Manual Tester"</span>,<br>
             &nbsp;&nbsp;<span class="key">"internship"</span>: <span class="string">"Binary Forge"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"location"</span>: <span class="string">"Tbilisi, Georgia"</span>,<br>
-            &nbsp;&nbsp;<span class="key">"skills"</span>: <span class="bracket">[</span><br>
+            &nbsp;&nbsp;<span class="key">"tools"</span>: <span class="bracket">[</span><br>
             &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Postman"</span>, <span class="string">"SQL"</span>, <span class="string">"Jira"</span><br>
             &nbsp;&nbsp;<span class="bracket">]</span>,<br>
-            &nbsp;&nbsp;<span class="key">"learning"</span>: <span class="string">"Java Automation"</span><br>
+            &nbsp;&nbsp;<span class="key">"mission"</span>: <span class="string">"Bug-free world"</span><br>
             <span class="bracket">}</span>
         </div>
     </div>
